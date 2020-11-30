@@ -23,6 +23,7 @@ class App extends React.Component {
     const { data } = this.state
     return (
       <div className={styles.container}>
+      {/* destructure data */}
        <Cards data={data}/>
        <Chart />
        <Country />
