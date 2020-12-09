@@ -3,6 +3,7 @@ import React from 'react';
 import { Cards, Chart, Country } from './components';
 import styles from './App.module.css'
 import { fetchData } from './api'
+import headerImage from './components/images/image.png'
 
 class App extends React.Component {
 
@@ -22,10 +23,11 @@ class App extends React.Component {
     const { data } = this.state
     return (
       <div className={styles.container}>
+      {/* <img className={styles.image} src={headerImage} alt="COVID-19"/> */}
       {/* destructure data */}
        <Cards data={data}/>
-       <Chart />
-       <Country />
+       {/* <Chart /> */}
+       {/* <Country /> */}
 
       </div>
     )
